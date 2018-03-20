@@ -1,0 +1,45 @@
+import { auth } from './firebase';
+import { AUTH_USER, UNAUTH_USER, AUTH_ERROR } from './types';
+
+export function registerUser({ email, password }) {
+	return (dispatch) => {
+		auth.createUserWithEmailAndPassword(email, password)
+			.then(() => {
+				dispatch({ type: AUTH_USER });
+			})
+			.catch(error => {
+				dispatch(authError('Unable to sign up user', error.message));
+			});
+	};
+}
+
+export function signInUser({ email, password }) {
+	return (dispatch) => {
+		auth.signInWithEmailAndPassword(email, password)
+			.then(() => {
+				dispatch({ type: AUTH_USER });
+			})
+			.catch(error => {
+				dispatch(authError('Unable to sign in user', error.message));
+			});
+	};
+}
+
+export function signOutUser() {
+	return (dispatch) => {
+		auth.signOut()
+			.then(() => {
+				dispatch({ type: UNAUTH_USER });
+			})
+			.catch(error => {
+				dispatch(authError('Unable to sign out', error.message));
+			});
+	};
+}
+
+export function authError(error, message) {
+	return {
+		type: AUTH_ERROR,
+		payload: `${error}: ${message}`
+	};
+}

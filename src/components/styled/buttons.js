@@ -1,0 +1,9 @@
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+export const Anchor = styled(Link)`
+	color: ${({ theme }) => theme.textColor};
+	background-color: ${({ theme }) => theme.primaryColor};
+	padding: 1rem 2rem;
+	text-decoration: none;
+`;
