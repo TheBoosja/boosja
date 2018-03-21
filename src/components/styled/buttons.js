@@ -7,3 +7,17 @@ export const Anchor = styled(Link)`
 	padding: 1rem 2rem;
 	text-decoration: none;
 `;
+
+export const Button = styled.button`
+	background-color: ${({ theme }) => theme.primaryColor};
+	border: none;
+	color: ${({ theme }) => theme.textColor};
+	font-family: inherit;
+	font-size: ${({ large }) => large && '2rem'};
+	padding: 1rem 2rem;
+	transition: all .2s;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.primaryColorLight}
+	}
+`;
