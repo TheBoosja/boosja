@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
-import { Nav, NavItem } from './Navbar-styled';
+import { Nav, NavItem } from '../styled';
 import { withRouter } from 'react-router-dom';
 
 export const Navbar = ({ isAuthenticated }) => {

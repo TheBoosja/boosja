@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from './theme';
-import Navbar from './layout/Navbar';
+import Navbar from './base/Navbar';
 import Routes from './routes';
 
 const Layout = styled.div`

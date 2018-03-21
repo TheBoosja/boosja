@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Anchor } from './styled';
+import { Title, Anchor } from '../styled';
 
 const Home = () => {
 	return (

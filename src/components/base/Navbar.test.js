@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Navbar } from './Navbar';
-import { Nav, NavIten, NavItem } from './Navbar-styled';
+import { Nav, NavItem } from '../styled';
 
 describe('Navbar', () => {
 	const navbar = shallow(<Navbar />);
