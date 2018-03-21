@@ -16,6 +16,7 @@ injectGlobal`
 
 	@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 	body {
+		color: #c4ccd1;
 		font-family: 'Roboto', sans-serif;
 		font-size: 1.4rem;
 		font-weight: 400;
@@ -24,7 +25,8 @@ injectGlobal`
 `;
 
 export default {
-	primaryColor: '#0084d1',
+	primaryColor: '#064789',
+	primaryColorLight: '#0084d1',
 	textColor: '#c4ccd1',
 	bgDark: '#202223',
 	bgLight: '#393e41'
