@@ -15,6 +15,7 @@ export const Button = styled.button`
 	font-family: inherit;
 	font-size: ${({ large }) => large && '2rem'};
 	padding: 1rem 2rem;
+	cursor: pointer;
 	transition: all .2s;
 
 	&:hover {
