@@ -9,6 +9,6 @@ export default (state = {}, { type, payload }) => {
 		case AUTH_ERROR:
 			return { ...state, error: payload };
 		default:
-			return { ...state, isAuthenticated: false };
+			return { ...state, error: '' };
 	}
 };
