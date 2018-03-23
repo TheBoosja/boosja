@@ -26,7 +26,7 @@ const NavigationListItemLink = styled(NavLink).attrs({
 		color: ${({ theme }) => theme.textColor}
 		display: block;
 		font-size: 2rem;
-		padding: 2vh 0;
+		padding: 1vh 0;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
