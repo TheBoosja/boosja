@@ -1,4 +1,5 @@
 import { auth } from './firebase';
+import { push } from 'react-router-redux';
 import { AUTH_USER, UNAUTH_USER, AUTH_ERROR } from './types';
 
 export function registerUser({ email, password }) {
@@ -6,6 +7,7 @@ export function registerUser({ email, password }) {
 		auth.createUserWithEmailAndPassword(email, password)
 			.then(() => {
 				dispatch({ type: AUTH_USER });
+				dispatch(push('/profile'));
 			})
 			.catch(error => {
 				dispatch(authError('Unable to sign up user', error.message));
@@ -18,6 +20,7 @@ export function signInUser({ email, password }) {
 		auth.signInWithEmailAndPassword(email, password)
 			.then(() => {
 				dispatch({ type: AUTH_USER });
+				dispatch(push('/profile'));
 			})
 			.catch(error => {
 				dispatch(authError('Unable to sign in user', error.message));
