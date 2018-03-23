@@ -30,6 +30,18 @@ ShallowWrapper {
 >
           Search
 </Unknown>,
+        <Unknown
+          exact={false}
+          to="/signin"
+>
+          Sign In
+</Unknown>,
+        <Unknown
+          exact={false}
+          to="/register"
+>
+          Register
+</Unknown>,
       ],
     },
     "ref": null,
@@ -60,6 +72,32 @@ ShallowWrapper {
         "rendered": "Search",
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "children": "Sign In",
+          "exact": false,
+          "to": "/signin",
+        },
+        "ref": null,
+        "rendered": "Sign In",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "children": "Register",
+          "exact": false,
+          "to": "/register",
+        },
+        "ref": null,
+        "rendered": "Register",
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -81,6 +119,18 @@ ShallowWrapper {
             to="/search"
 >
             Search
+</Unknown>,
+          <Unknown
+            exact={false}
+            to="/signin"
+>
+            Sign In
+</Unknown>,
+          <Unknown
+            exact={false}
+            to="/register"
+>
+            Register
 </Unknown>,
         ],
       },
@@ -110,6 +160,32 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Search",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "children": "Sign In",
+            "exact": false,
+            "to": "/signin",
+          },
+          "ref": null,
+          "rendered": "Sign In",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "children": "Register",
+            "exact": false,
+            "to": "/register",
+          },
+          "ref": null,
+          "rendered": "Register",
           "type": [Function],
         },
       ],
