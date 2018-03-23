@@ -1,10 +1,10 @@
 import React from 'react';
-import { Title, Anchor } from '../styled';
+import { Heading, Anchor } from '../styled';
 
 const Home = () => {
 	return (
 		<div>
-			<Title>Boosja</Title>
+			<Heading>Boosja</Heading>
 			<Anchor to='/search'>To the Search</Anchor>
 		</div>
 	);
