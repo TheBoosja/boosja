@@ -25,8 +25,15 @@ ShallowWrapper {
 />,
         <Route
           component={[Function]}
-          exact={true}
-          path="/auth"
+          path="/signin"
+/>,
+        <Route
+          component={[Function]}
+          path="/register"
+/>,
+        <Route
+          component={[Function]}
+          path="/signout"
 />,
       ],
     },
@@ -51,8 +58,31 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "component": [Function],
-          "exact": true,
-          "path": "/auth",
+          "path": "/signin",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/register",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/signout",
         },
         "ref": null,
         "rendered": null,
@@ -75,8 +105,15 @@ ShallowWrapper {
 />,
           <Route
             component={[Function]}
-            exact={true}
-            path="/auth"
+            path="/signin"
+/>,
+          <Route
+            component={[Function]}
+            path="/register"
+/>,
+          <Route
+            component={[Function]}
+            path="/signout"
 />,
         ],
       },
@@ -101,8 +138,31 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
-            "exact": true,
-            "path": "/auth",
+            "path": "/signin",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/register",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/signout",
           },
           "ref": null,
           "rendered": null,
