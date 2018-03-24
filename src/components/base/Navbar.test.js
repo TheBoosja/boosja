@@ -24,9 +24,14 @@ describe('Navbar', () => {
 		const props = { isAuthenticated: false };
 		const navbar = shallow(<Navbar {...props} />);
 
-		it('contains a link to the Auth page', () => {
-			const authLink = navbar.findWhere(l => l.props().to === '/auth');
-			expect(authLink.exists()).toBe(true);
+		it('contains a link to the Sign In page', () => {
+			const signInLink = navbar.findWhere(l => l.props().to === '/signin');
+			expect(signInLink.exists()).toBe(true);
+		});
+
+		it('contains a link to the Register page', () => {
+			const registerLink = navbar.findWhere(l => l.props().to === '/register');
+			expect(registerLink.exists()).toBe(true);
 		});
 
 		it('does not contain a link to the Profile', () => {
@@ -54,9 +59,14 @@ describe('Navbar', () => {
 			expect(signOutLink.exists()).toBe(true);
 		});
 
-		it('does not contain a link to the Auth page', () => {
-			const authLink = navbar.findWhere(l => l.props().to === '/auth');
-			expect(authLink.exists()).toBe(false);
+		it('does not contain a link to the Sign In page', () => {
+			const signInLink = navbar.findWhere(l => l.props().to === '/signin');
+			expect(signInLink.exists()).toBe(false);
+		});
+
+		it('does not contain a link to the Register page', () => {
+			const registerLink = navbar.findWhere(l => l.props().to === '/register');
+			expect(registerLink.exists()).toBe(false);
 		});
 	});
 
