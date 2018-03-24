@@ -5,8 +5,9 @@ import theme from './theme';
 import { auth } from '../actions/firebase';
 import { AUTH_USER } from '../actions/types';
 
-import Navbar from './base/Navbar';
 import Routes from './routes';
+import Navbar from './base/Navbar';
+Navbar.displayName = 'Navbar';
 
 const Layout = styled.div`
 	background-color: ${({ theme }) => theme.bgDark};
@@ -32,7 +33,6 @@ class App extends Component {
 			<ThemeProvider theme={theme}>
 				<Layout>
 					<Navbar />
-
 					<Routes />
 				</Layout>
 			</ThemeProvider>

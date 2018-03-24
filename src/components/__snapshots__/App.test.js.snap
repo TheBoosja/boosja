@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <styled.div>
-        <withRouter(Connect(Component)) />
+        <Navbar />
         <Routes />
 </styled.div>,
       "theme": Object {
@@ -36,7 +36,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <withRouter(Connect(Component)) />,
+          <Navbar />,
           <Routes />,
         ],
       },
@@ -72,7 +72,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <styled.div>
-          <withRouter(Connect(Component)) />
+          <Navbar />
           <Routes />
 </styled.div>,
         "theme": Object {
@@ -90,7 +90,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <withRouter(Connect(Component)) />,
+            <Navbar />,
             <Routes />,
           ],
         },
