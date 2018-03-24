@@ -6,6 +6,7 @@ export const Heading = styled.h1`
 	color: ${({ theme }) => theme.textColor};
 	margin-bottom: 2rem;
 `;
+Heading.displayName = 'Heading';
 
 export const Title = styled.h2`
 	font-size: 3.5rem;
@@ -13,3 +14,4 @@ export const Title = styled.h2`
 	margin-bottom: 2rem;
 	text-align: center;
 `;
+Title.displayName = 'Title';

@@ -219,7 +219,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <styled.ul />,
+      "children": <NavigationList />,
     },
     "ref": null,
     "rendered": Object {
@@ -241,7 +241,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <styled.ul />,
+        "children": <NavigationList />,
       },
       "ref": null,
       "rendered": Object {
@@ -285,7 +285,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Styled(NavLink) />,
+      "children": <NavigationListItemLink />,
     },
     "ref": null,
     "rendered": Object {
@@ -307,7 +307,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Styled(NavLink) />,
+        "children": <NavigationListItemLink />,
       },
       "ref": null,
       "rendered": Object {

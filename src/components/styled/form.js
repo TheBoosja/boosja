@@ -6,6 +6,7 @@ export const Form = styled.form`
 	align-content: center;
 	justify-content: center;
 `;
+Form.displayName = 'Form';
 
 export const Input = styled.input`
 	background-color: ${({ theme }) => theme.bgLight};
@@ -20,6 +21,7 @@ export const Input = styled.input`
 		outline: none;
 	}
 `;
+Input.displayName = 'Input';
 
 export const Error = styled.span`
 	display: block;
@@ -27,3 +29,4 @@ export const Error = styled.span`
 	font-size: 1.2rem;
 	margin: 1rem 2rem;
 `;
+Error.displayName = 'Error';

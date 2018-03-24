@@ -8,15 +8,18 @@ const Navigation = styled.nav`
 	height: 100vh;
 	display: grid; 
 `;
+Navigation.displayName = 'Navigation';
 
 const NavigationList = styled.ul`
 	align-self: center;
 	display: grid;
 	list-style: none;
 `;
+NavigationList.displayName = 'NavigationList';
 
 const NavigationListItem = styled.li`
 `;
+NavigationListItem.displayName = 'NavigationListItem';
 
 const NavigationListItemLink = styled(NavLink).attrs({
 	activeClassName: 'active'
@@ -41,6 +44,7 @@ const NavigationListItemLink = styled(NavLink).attrs({
 		color: ${({ theme }) => theme.primaryColorLight}
 	}
 `;
+NavigationListItemLink.displayName = 'NavigationListItemLink';
 
 export const Nav = (props) => {
 	return (
