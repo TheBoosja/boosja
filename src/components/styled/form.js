@@ -23,7 +23,7 @@ export const Input = styled.input`
 `;
 Input.displayName = 'Input';
 
-export const Error = styled.span`
+export const Error = styled.label`
 	display: block;
 	color: red;
 	font-size: 1.2rem;
