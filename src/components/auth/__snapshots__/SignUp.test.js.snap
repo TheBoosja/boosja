@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign Up renders properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignUp
+    authError={[Function]}
+    handleSubmit={[Function]}
+    registerUser={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Title>
+          Register a new account
+</Title>,
+        <Field
+          autoFocus={true}
+          component={[Function]}
+          label="Email"
+          name="email"
+          type="email"
+/>,
+        <Field
+          component={[Function]}
+          label="Password"
+          name="password"
+          type="password"
+/>,
+        <Field
+          component={[Function]}
+          label="Confirm Password"
+          name="passwordConfirm"
+          type="password"
+/>,
+        <Button
+          large={true}
+          type="submit"
+>
+          Register
+</Button>,
+        undefined,
+      ],
+      "onSubmit": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Register a new account",
+        },
+        "ref": null,
+        "rendered": "Register a new account",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoFocus": true,
+          "component": [Function],
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "label": "Confirm Password",
+          "name": "passwordConfirm",
+          "type": "password",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Register",
+          "large": true,
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Register",
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Title>
+            Register a new account
+</Title>,
+          <Field
+            autoFocus={true}
+            component={[Function]}
+            label="Email"
+            name="email"
+            type="email"
+/>,
+          <Field
+            component={[Function]}
+            label="Password"
+            name="password"
+            type="password"
+/>,
+          <Field
+            component={[Function]}
+            label="Confirm Password"
+            name="passwordConfirm"
+            type="password"
+/>,
+          <Button
+            large={true}
+            type="submit"
+>
+            Register
+</Button>,
+          undefined,
+        ],
+        "onSubmit": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Register a new account",
+          },
+          "ref": null,
+          "rendered": "Register a new account",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoFocus": true,
+            "component": [Function],
+            "label": "Email",
+            "name": "email",
+            "type": "email",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "label": "Password",
+            "name": "password",
+            "type": "password",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "label": "Confirm Password",
+            "name": "passwordConfirm",
+            "type": "password",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Register",
+            "large": true,
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Register",
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
