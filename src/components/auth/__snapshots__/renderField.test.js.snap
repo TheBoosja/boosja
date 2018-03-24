@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderField renders properly 1`] = `
+<Unknown>
+  <Input
+    autoFocus={undefined}
+    name={undefined}
+    placeholder={undefined}
+    type={undefined}
+  />
+  <Error>
+     
+  </Error>
+</Unknown>
+`;
