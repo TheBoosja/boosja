@@ -9,8 +9,11 @@ describe('Home', () => {
 		expect(home).toMatchSnapshot();
 	});
 
+	it('contains a Heading component', () => {
+		expect(home.find('Heading').exists()).toBe(true);
+	});
+
 	it('contains a link to the Search page', () => {
-		// console.log(home.debug());
-		expect(home.find('Styled(Link)').prop('to')).toEqual('/search');
+		expect(home.find('Anchor').props().to).toEqual('/search');
 	});
 });

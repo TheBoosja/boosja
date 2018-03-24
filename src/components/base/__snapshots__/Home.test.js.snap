@@ -18,14 +18,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <styled.h1>
+        <Heading>
           Boosja
-</styled.h1>,
-        <Styled(Link)
+</Heading>,
+        <Anchor
           to="/search"
 >
           To the Search
-</Styled(Link)>,
+</Anchor>,
       ],
     },
     "ref": null,
@@ -63,14 +63,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <styled.h1>
+          <Heading>
             Boosja
-</styled.h1>,
-          <Styled(Link)
+</Heading>,
+          <Anchor
             to="/search"
 >
             To the Search
-</Styled(Link)>,
+</Anchor>,
         ],
       },
       "ref": null,
