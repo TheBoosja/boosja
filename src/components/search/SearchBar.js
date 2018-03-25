@@ -34,7 +34,7 @@ function validate({ query }) {
 	return !query ? { query: 'Enter a query' } : {};
 }
 
-export default reduxForm({
-	form: 'search',
-	validate
-})(SearchBar);
+const ComputedSearchBar = reduxForm({ form: 'search', validate })(SearchBar);
+
+ComputedSearchBar.displayName = 'SearchBar';
+export default ComputedSearchBar;
