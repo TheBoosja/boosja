@@ -1,8 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
-import { Nav, NavItem } from '../styled';
 import { withRouter } from 'react-router-dom';
+import { Nav, NavItem } from 'components/styled';
 
 export const Navbar = ({ isAuthenticated }) => {
 	const navItems = [
@@ -18,24 +18,26 @@ export const Navbar = ({ isAuthenticated }) => {
 		if (_.isUndefined(item.auth)) {
 			return true;
 		}
-		
+
 		const authed = _.isUndefined(isAuthenticated) ? false : isAuthenticated;
 
 		return item.auth === authed;
 	});
 
-	const navLinks = _.map(filteredItems, ({ exact, to, label }, i) => 
-		<NavItem exact={exact || false} to={to} key={i}>{label}</NavItem>);
+	const navLinks = _.map(filteredItems, ({ exact, to, label }, i) => (
+		<NavItem exact={exact || false} to={to} key={i}>
+			{label}
+		</NavItem>
+	));
 
-	return (
-		<Nav>
-			{navLinks}
-		</Nav>
-	);
+	return <Nav>{navLinks}</Nav>;
 };
 
 function mapStateToProps({ auth: { isAuthenticated } }) {
 	return { isAuthenticated };
 }
 
-export default withRouter(connect(mapStateToProps)(Navbar));
+const ComputedNavbar = withRouter(connect(mapStateToProps)(Navbar));
+
+ComputedNavbar.displayName = 'Navbar';
+export default ComputedNavbar;

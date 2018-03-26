@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import { signInUser, authError } from '../../actions/auth';
-import { Form, Error, Button, Title } from '../styled';
+import { signInUser, authError } from 'actions/auth';
+import { Form, Error, Button, Title } from 'components/styled';
 import renderField from './renderField';
 
 export class SignIn extends Component {
@@ -32,17 +32,19 @@ export class SignIn extends Component {
 			<Form onSubmit={handleSubmit(this.onFormSubmit)}>
 				<Title>Sign In</Title>
 				<Field
-					label='Email'
-					name='email'
-					type='email'
+					label="Email"
+					name="email"
+					type="email"
 					autoFocus
-					component={renderField} />
+					component={renderField}
+				/>
 				<Field
-					label='Password'
-					name='password'
-					type='password'
-					component={renderField} />
-				<Button large type='submit'>
+					label="Password"
+					name="password"
+					type="password"
+					component={renderField}
+				/>
+				<Button large type="submit">
 					Sign In
 				</Button>
 				{this.renderAlert()}

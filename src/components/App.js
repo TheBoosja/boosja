@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from './theme';
 // Auth
-import { auth } from '../actions/firebase';
-import { AUTH_USER } from '../actions/types';
+import { auth } from 'actions/firebase';
+import { AUTH_USER } from 'actions/types';
 
 import Routes from './routes';
 import Navbar from './base/Navbar';
-Navbar.displayName = 'Navbar';
 
 const Layout = styled.div`
 	background-color: ${({ theme }) => theme.bgDark};

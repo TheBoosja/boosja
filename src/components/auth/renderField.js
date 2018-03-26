@@ -1,10 +1,23 @@
 import React, { Fragment } from 'react';
-import { Input, Error } from '../styled';
+import { Input, Error } from 'components/styled';
 
-export default function renderField({ input, name, label, type, autoFocus, meta: { touched, error } }) {
+export default function renderField({
+	input,
+	name,
+	type,
+	label,
+	autoFocus,
+	meta: { touched, error }
+}) {
 	return (
 		<Fragment>
-			<Input {...input} name={name} type={type} placeholder={label} autoFocus={autoFocus} />
+			<Input
+				{...input}
+				name={name}
+				type={type}
+				placeholder={label}
+				autoFocus={autoFocus}
+			/>
 			<Error>{touched && error}&nbsp;</Error>
 		</Fragment>
 	);

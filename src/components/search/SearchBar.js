@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
-import { Form } from '../styled';
+import { Form } from 'components/styled';
 
 export class SearchBar extends Component {
 	constructor(props) {
 		super(props);
-	
+
 		this.onFormSubmit = this.onFormSubmit.bind(this);
 	}
 
@@ -21,10 +21,11 @@ export class SearchBar extends Component {
 		return (
 			<Form onSubmit={handleSubmit(this.onFormSubmit)}>
 				<Field
-					name='query'
-					placeholder='Search'
+					name="query"
+					placeholder="Search"
 					autoFocus
-					component='input' />
+					component="input"
+				/>
 			</Form>
 		);
 	}
