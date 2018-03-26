@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { Nav, NavItem } from 'components/styled';
 import { Navbar } from './Navbar';
-import { Nav, NavItem } from '../styled';
 
 describe('Navbar', () => {
 	const navbar = shallow(<Navbar />);
@@ -11,13 +11,11 @@ describe('Navbar', () => {
 	});
 
 	it('contains a link to the homepage', () => {
-		const homeLink = navbar.findWhere(l => l.props().to === '/');
-		expect(homeLink.exists()).toBe(true);
+		expect(navbar.find({ to: '/' }).exists()).toBe(true);
 	});
 
 	it('contains a link to the Search page', () => {
-		const searchLink = navbar.findWhere(l => l.props().to === '/search');
-		expect(searchLink.exists()).toBe(true);
+		expect(navbar.find({ to: '/search' }).exists()).toBe(true);
 	});
 
 	describe('when not authenticated', () => {
@@ -25,23 +23,19 @@ describe('Navbar', () => {
 		const navbar = shallow(<Navbar {...props} />);
 
 		it('contains a link to the Sign In page', () => {
-			const signInLink = navbar.findWhere(l => l.props().to === '/signin');
-			expect(signInLink.exists()).toBe(true);
+			expect(navbar.find({ to: '/signin' }).exists()).toBe(true);
 		});
 
 		it('contains a link to the Register page', () => {
-			const registerLink = navbar.findWhere(l => l.props().to === '/register');
-			expect(registerLink.exists()).toBe(true);
+			expect(navbar.find({ to: '/register' }).exists()).toBe(true);
 		});
 
 		it('does not contain a link to the Profile', () => {
-			const profileLink = navbar.findWhere(l => l.props().to === '/profile');
-			expect(profileLink.exists()).toBe(false);
+			expect(navbar.find({ to: '/profile' }).exists()).toBe(false);
 		});
 
 		it('does not contain a link to Sign out', () => {
-			const signOutLink = navbar.findWhere(l => l.props().to === '/signout');
-			expect(signOutLink.exists()).toBe(false);
+			expect(navbar.find({ to: '/signout' }).exists()).toBe(false);
 		});
 	});
 
@@ -50,23 +44,19 @@ describe('Navbar', () => {
 		const navbar = shallow(<Navbar {...props} />);
 
 		it('contains a link to the Profile', () => {
-			const profileLink = navbar.findWhere(l => l.props().to === '/profile');
-			expect(profileLink.exists()).toBe(true);
+			expect(navbar.find({ to: '/profile' }).exists()).toBe(true);
 		});
 
 		it('contains a link to Sign Out', () => {
-			const signOutLink = navbar.findWhere(l => l.props().to === '/signout');
-			expect(signOutLink.exists()).toBe(true);
+			expect(navbar.find({ to: '/signout' }).exists()).toBe(true);
 		});
 
 		it('does not contain a link to the Sign In page', () => {
-			const signInLink = navbar.findWhere(l => l.props().to === '/signin');
-			expect(signInLink.exists()).toBe(false);
+			expect(navbar.find({ to: '/signin' }).exists()).toBe(false);
 		});
 
 		it('does not contain a link to the Register page', () => {
-			const registerLink = navbar.findWhere(l => l.props().to === '/register');
-			expect(registerLink.exists()).toBe(false);
+			expect(navbar.find({ to: '/register' }).exists()).toBe(false);
 		});
 	});
 

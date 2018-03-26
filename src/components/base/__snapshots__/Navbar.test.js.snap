@@ -18,30 +18,30 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <Unknown
+        <NavItem
           exact={true}
           to="/"
 >
           Home
-</Unknown>,
-        <Unknown
+</NavItem>,
+        <NavItem
           exact={false}
           to="/search"
 >
           Search
-</Unknown>,
-        <Unknown
+</NavItem>,
+        <NavItem
           exact={false}
           to="/signin"
 >
           Sign In
-</Unknown>,
-        <Unknown
+</NavItem>,
+        <NavItem
           exact={false}
           to="/register"
 >
           Register
-</Unknown>,
+</NavItem>,
       ],
     },
     "ref": null,
@@ -108,30 +108,30 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Unknown
+          <NavItem
             exact={true}
             to="/"
 >
             Home
-</Unknown>,
-          <Unknown
+</NavItem>,
+          <NavItem
             exact={false}
             to="/search"
 >
             Search
-</Unknown>,
-          <Unknown
+</NavItem>,
+          <NavItem
             exact={false}
             to="/signin"
 >
             Sign In
-</Unknown>,
-          <Unknown
+</NavItem>,
+          <NavItem
             exact={false}
             to="/register"
 >
             Register
-</Unknown>,
+</NavItem>,
         ],
       },
       "ref": null,
@@ -206,7 +206,7 @@ exports[`Navbar styled Nav renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__unrendered__): <Nav />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -272,7 +272,7 @@ exports[`Navbar styled NavItem renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__unrendered__): <NavItem />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
