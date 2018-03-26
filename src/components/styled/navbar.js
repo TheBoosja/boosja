@@ -6,7 +6,7 @@ const Navigation = styled.nav`
 	background-color: ${({ theme }) => theme.bgLight};
 	grid-row: 1 / -1;
 	height: 100vh;
-	display: grid; 
+	display: grid;
 `;
 Navigation.displayName = 'Navigation';
 
@@ -17,8 +17,7 @@ const NavigationList = styled.ul`
 `;
 NavigationList.displayName = 'NavigationList';
 
-const NavigationListItem = styled.li`
-`;
+const NavigationListItem = styled.li``;
 NavigationListItem.displayName = 'NavigationListItem';
 
 const NavigationListItemLink = styled(NavLink).attrs({
@@ -26,7 +25,7 @@ const NavigationListItemLink = styled(NavLink).attrs({
 })`
 	&:link,
 	&:visited {
-		color: ${({ theme }) => theme.textColor}
+		color: ${({ theme }) => theme.textColor};
 		display: block;
 		font-size: 2rem;
 		padding: 1vh 0;
@@ -37,29 +36,29 @@ const NavigationListItemLink = styled(NavLink).attrs({
 
 	&:hover,
 	&:active {
-		color: ${({ theme }) => theme.primaryColorLight}
+		color: ${({ theme }) => theme.primaryColorLight};
 	}
 
 	&.active {
-		color: ${({ theme }) => theme.primaryColorLight}
+		color: ${({ theme }) => theme.primaryColorLight};
 	}
 `;
 NavigationListItemLink.displayName = 'NavigationListItemLink';
 
-export const Nav = (props) => {
+export const Nav = props => {
 	return (
 		<Navigation>
-			<NavigationList>
-				{props.children}
-			</NavigationList>
+			<NavigationList>{props.children}</NavigationList>
 		</Navigation>
 	);
 };
 
-export const NavItem = (props) => {
+export const NavItem = props => {
 	return (
 		<NavigationListItem>
-			<NavigationListItemLink {...props}>{props.children}</NavigationListItemLink>
+			<NavigationListItemLink {...props}>
+				{props.children}
+			</NavigationListItemLink>
 		</NavigationListItem>
 	);
 };
