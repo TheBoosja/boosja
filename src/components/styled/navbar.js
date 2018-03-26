@@ -45,15 +45,16 @@ const NavigationListItemLink = styled(NavLink).attrs({
 `;
 NavigationListItemLink.displayName = 'NavigationListItemLink';
 
-export const Nav = props => {
+const Nav = props => {
 	return (
 		<Navigation>
 			<NavigationList>{props.children}</NavigationList>
 		</Navigation>
 	);
 };
+Nav.displayName = 'Nav';
 
-export const NavItem = props => {
+const NavItem = props => {
 	return (
 		<NavigationListItem>
 			<NavigationListItemLink {...props}>
@@ -62,3 +63,6 @@ export const NavItem = props => {
 		</NavigationListItem>
 	);
 };
+NavItem.displayName = 'NavItem';
+
+export { Nav, NavItem };
