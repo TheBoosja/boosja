@@ -6,8 +6,8 @@ import createHistory from 'history/createBrowserHistory';
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
 import reduxThunk from 'redux-thunk';
 
-import reducers from './reducers';
-import App from './components/App';
+import reducers from 'reducers';
+import App from 'components/App';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -18,8 +18,8 @@ const store = createStoreWithMiddleware(reducers);
 ReactDOM.render(
 	<Provider store={store}>
 		<ConnectedRouter history={history}>
-			<App store={store} />
+			<App />
 		</ConnectedRouter>
-	</Provider>
-	, document.getElementById('root')
+	</Provider>,
+	document.getElementById('root')
 );
