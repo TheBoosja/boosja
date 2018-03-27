@@ -35,6 +35,10 @@ ShallowWrapper {
           component={[Function]}
           path="/signout"
 />,
+        <Route
+          component={[Function]}
+          path="/search"
+/>,
       ],
     },
     "ref": null,
@@ -88,6 +92,18 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/search",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -114,6 +130,10 @@ ShallowWrapper {
           <Route
             component={[Function]}
             path="/signout"
+/>,
+          <Route
+            component={[Function]}
+            path="/search"
 />,
         ],
       },
@@ -163,6 +183,18 @@ ShallowWrapper {
           "props": Object {
             "component": [Function],
             "path": "/signout",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/search",
           },
           "ref": null,
           "rendered": null,

@@ -10,22 +10,26 @@ describe('Routes', () => {
 	});
 
 	it('contains a root route', () => {
-		const root = routes.findWhere(r => r.props().path === '/');
-		expect(root.exists()).toBe(true);
+		expect(routes.find({ path: '/' }).exists()).toBe(true);
 	});
 
-	it('contains a Sign In route', () => {
-		const signIn = routes.findWhere(r => r.props().path === '/signin');
-		expect(signIn.exists()).toBe(true);
+	describe('Authentication', () => {
+		it('contains a Sign In route', () => {
+			expect(routes.find({ path: '/signin' }).exists()).toBe(true);
+		});
+
+		it('contains a Register route', () => {
+			expect(routes.find({ path: '/register' }).exists()).toBe(true);
+		});
+
+		it('contains a Sign Out route', () => {
+			expect(routes.find({ path: '/signout' }).exists()).toBe(true);
+		});
 	});
 
-	it('contains a Register route', () => {
-		const register = routes.findWhere(r => r.props().path === '/register');
-		expect(register.exists()).toBe(true);
-	});
-
-	it('contains a Sign Out route', () => {
-		const signOut = routes.findWhere(r => r.props().path === '/signout');
-		expect(signOut.exists()).toBe(true);
+	describe('Search', () => {
+		it('contains a Search route', () => {
+			expect(routes.find({ path: '/search' }).exists()).toBe(true);
+		});
 	});
 });
