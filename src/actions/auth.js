@@ -1,10 +1,23 @@
 import { auth } from './firebase';
 import { push } from 'react-router-redux';
-import { AUTH_USER, UNAUTH_USER, AUTH_ERROR } from './types';
+import { AUTH_USER, UNAUTH_USER, AUTH_ERROR, AUTH_REMOVE_LISTENER } from './types';
+
+export function createAuthStateChangeListener() {
+	return dispatch => {
+		const removeListener = auth.onAuthStateChanged(user => {
+			if (user) {
+				dispatch({ type: AUTH_USER });
+			}
+		});
+
+		dispatch({ type: AUTH_REMOVE_LISTENER, payload: removeListener });
+	};
+}
 
 export function registerUser({ email, password }) {
-	return (dispatch) => {
-		auth.createUserWithEmailAndPassword(email, password)
+	return dispatch => {
+		auth
+			.createUserWithEmailAndPassword(email, password)
 			.then(() => {
 				dispatch({ type: AUTH_USER });
 				dispatch(push('/profile'));
@@ -16,8 +29,9 @@ export function registerUser({ email, password }) {
 }
 
 export function signInUser({ email, password }) {
-	return (dispatch) => {
-		auth.signInWithEmailAndPassword(email, password)
+	return dispatch => {
+		auth
+			.signInWithEmailAndPassword(email, password)
 			.then(() => {
 				dispatch({ type: AUTH_USER });
 				dispatch(push('/profile'));
@@ -29,8 +43,9 @@ export function signInUser({ email, password }) {
 }
 
 export function signOutUser() {
-	return (dispatch) => {
-		auth.signOut()
+	return dispatch => {
+		auth
+			.signOut()
 			.then(() => {
 				dispatch({ type: UNAUTH_USER });
 			})
