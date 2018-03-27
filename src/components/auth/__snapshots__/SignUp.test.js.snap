@@ -45,7 +45,6 @@ ShallowWrapper {
           type="password"
 />,
         <Button
-          large={true}
           type="submit"
 >
           Register
@@ -116,7 +115,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "Register",
-          "large": true,
           "type": "submit",
         },
         "ref": null,
@@ -157,7 +155,6 @@ ShallowWrapper {
             type="password"
 />,
           <Button
-            large={true}
             type="submit"
 >
             Register
@@ -228,7 +225,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "Register",
-            "large": true,
             "type": "submit",
           },
           "ref": null,

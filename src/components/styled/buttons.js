@@ -14,13 +14,13 @@ export const Button = styled.button`
 	border: none;
 	color: ${({ theme }) => theme.textColor};
 	font-family: inherit;
-	font-size: ${({ large }) => large && '2rem'};
+	font-size: ${({ large }) => (large ? '2rem' : '1.5rem')};
 	padding: 1rem 2rem;
 	cursor: pointer;
-	transition: all .2s;
+	transition: all 0.2s;
 
 	&:hover {
-		background-color: ${({ theme }) => theme.primaryColorLight}
+		background-color: ${({ theme }) => theme.primaryColorLight};
 	}
 `;
 Button.displayName = 'Button';

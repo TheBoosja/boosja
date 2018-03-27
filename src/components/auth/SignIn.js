@@ -31,22 +31,9 @@ export class SignIn extends Component {
 		return (
 			<Form onSubmit={handleSubmit(this.onFormSubmit)}>
 				<Title>Sign In</Title>
-				<Field
-					label="Email"
-					name="email"
-					type="email"
-					autoFocus
-					component={renderField}
-				/>
-				<Field
-					label="Password"
-					name="password"
-					type="password"
-					component={renderField}
-				/>
-				<Button large type="submit">
-					Sign In
-				</Button>
+				<Field label="Email" name="email" type="email" autoFocus component={renderField} />
+				<Field label="Password" name="password" type="password" component={renderField} />
+				<Button type="submit">Sign In</Button>
 				{this.renderAlert()}
 			</Form>
 		);

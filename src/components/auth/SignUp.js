@@ -31,28 +31,15 @@ export class SignUp extends Component {
 		return (
 			<Form onSubmit={handleSubmit(this.onFormSubmit)}>
 				<Title>Register a new account</Title>
-				<Field
-					label="Email"
-					name="email"
-					type="email"
-					autoFocus
-					component={renderField}
-				/>
-				<Field
-					label="Password"
-					name="password"
-					type="password"
-					component={renderField}
-				/>
+				<Field label="Email" name="email" type="email" autoFocus component={renderField} />
+				<Field label="Password" name="password" type="password" component={renderField} />
 				<Field
 					label="Confirm Password"
 					name="passwordConfirm"
 					type="password"
 					component={renderField}
 				/>
-				<Button large type="submit">
-					Register
-				</Button>
+				<Button type="submit">Register</Button>
 				{this.renderAlert()}
 			</Form>
 		);

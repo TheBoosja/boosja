@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
 	display: grid;
-	grid-template-columns: 50vw;
+	grid-template-columns: 30vw;
 	align-content: center;
 	justify-content: center;
 `;
@@ -13,7 +13,7 @@ export const Input = styled.input`
 	border: none;
 	color: inherit;
 	font-family: inherit;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	padding: 1rem 2rem;
 	width: 100%;
 

@@ -39,7 +39,6 @@ ShallowWrapper {
           type="password"
 />,
         <Button
-          large={true}
           type="submit"
 >
           Sign In
@@ -96,7 +95,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "Sign In",
-          "large": true,
           "type": "submit",
         },
         "ref": null,
@@ -131,7 +129,6 @@ ShallowWrapper {
             type="password"
 />,
           <Button
-            large={true}
             type="submit"
 >
             Sign In
@@ -188,7 +185,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "Sign In",
-            "large": true,
             "type": "submit",
           },
           "ref": null,
