@@ -8,10 +8,15 @@ export function search(query, page = 1) {
 		const url = `${ROOT_URL}&query=${query}&page=${page}`;
 
 		return axios(url)
-			.then(res => {
+			.then(({ data: { results, total_results, page, total_pages } }) => {
 				dispatch({
 					type: SEARCH_RESULT,
-					payload: res.data
+					payload: {
+						results,
+						total_results,
+						page,
+						total_pages
+					}
 				});
 			})
 			.catch(err => {
