@@ -24,7 +24,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <SearchBar />,
+        <SearchBar
+          history={undefined}
+          match={
+                    Object {
+                              "url": "/search",
+                            }
+          }
+/>,
         <Route
           component={[Function]}
           path="/search/:query/:page?"
@@ -37,7 +44,12 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "history": undefined,
+          "match": Object {
+            "url": "/search",
+          },
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -64,7 +76,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <SearchBar />,
+          <SearchBar
+            history={undefined}
+            match={
+                        Object {
+                                    "url": "/search",
+                                  }
+            }
+/>,
           <Route
             component={[Function]}
             path="/search/:query/:page?"
@@ -77,7 +96,12 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "history": undefined,
+            "match": Object {
+              "url": "/search",
+            },
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
