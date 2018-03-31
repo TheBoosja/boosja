@@ -13,4 +13,8 @@ describe('Search Reducer', () => {
 
 		expect(searchReducer({}, { type: EMPTY_RESULT })).toEqual(searchData);
 	});
+
+	it('returns the state on default', () => {
+		expect(searchReducer({}, { type: 'SOME_TYPE' })).toEqual({});
+	});
 });
