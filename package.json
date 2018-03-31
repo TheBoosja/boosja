@@ -33,11 +33,6 @@
 		"redux-mock-store": "^1.5.1"
 	},
 	"jest": {
-		"collectCoverageFrom": [
-			"src/**/*.js",
-			"!src/index.js",
-			"!src/components/styled/*",
-			"!src/reducers/index.js"
-		]
+		"collectCoverageFrom": ["src/**/*.js", "!src/index.js", "!src/components/styled/*"]
 	}
 }
