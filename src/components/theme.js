@@ -28,6 +28,7 @@ export default {
 	primaryColor: '#064789',
 	primaryColorLight: '#0084d1',
 	textColor: '#c4ccd1',
-	bgDark: '#202223',
-	bgLight: '#393e41'
+	detailColor: '#757776',
+	bgLight: '#393e41',
+	bgDark: '#202223'
 };
