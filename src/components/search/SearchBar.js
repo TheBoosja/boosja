@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
-import { Form } from 'components/styled';
+import { SearchField } from 'components/styled';
 
 export class SearchBar extends Component {
 	constructor(props) {
 		super(props);
 
 		this.onFormSubmit = this.onFormSubmit.bind(this);
+	}
+
+	renderField({ input, placeholder }) {
+		return <SearchField {...input} placeholder={placeholder} autoFocus />;
 	}
 
 	onFormSubmit({ query }) {
@@ -19,19 +23,14 @@ export class SearchBar extends Component {
 		const { handleSubmit } = this.props;
 
 		return (
-			<Form onSubmit={handleSubmit(this.onFormSubmit)}>
-				<Field
-					name="query"
-					placeholder="Search"
-					autoFocus
-					component="input"
-				/>
-			</Form>
+			<form onSubmit={handleSubmit(this.onFormSubmit)}>
+				<Field name="query" placeholder="Search" autoFocus component={this.renderField} />
+			</form>
 		);
 	}
 }
 
-function validate({ query }) {
+export function validate({ query }) {
 	return !query ? { query: 'Enter a query' } : {};
 }
 
