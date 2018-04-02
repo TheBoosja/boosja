@@ -9,7 +9,8 @@ import Navbar from './base/Navbar';
 const Layout = styled.div`
 	background-color: ${({ theme }) => theme.bgDark};
 	display: grid;
-	grid-template-columns: 10vw 1fr;
+	min-height: 100vh;
+	padding-left: 10vw;
 `;
 
 export class App extends Component {

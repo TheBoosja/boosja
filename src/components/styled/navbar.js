@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = styled.nav`
 	background-color: ${({ theme }) => theme.bgLight};
-	grid-row: 1 / -1;
-	height: 100vh;
 	display: grid;
+	height: 100vh;
+	position: fixed;
+	width: 10vw;
 `;
 Navigation.displayName = 'Navigation';
 
@@ -57,9 +58,7 @@ Nav.displayName = 'Nav';
 const NavItem = props => {
 	return (
 		<NavigationListItem>
-			<NavigationListItemLink {...props}>
-				{props.children}
-			</NavigationListItemLink>
+			<NavigationListItemLink {...props}>{props.children}</NavigationListItemLink>
 		</NavigationListItem>
 	);
 };
