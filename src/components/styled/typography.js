@@ -1,17 +1,38 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Heading = styled.h1`
+const mb = css`
+	margin-bottom: 2rem;
+`;
+
+const fw = css`
+	font-weight: 400;
+`;
+
+const PrimaryHeading = styled.h1`
 	font-size: 5rem;
 	font-weight: 700;
-	color: ${({ theme }) => theme.textColor};
-	margin-bottom: 2rem;
+	${mb};
 `;
-Heading.displayName = 'Heading';
+PrimaryHeading.displayName = 'PrimaryHeading';
 
-export const Title = styled.h2`
+const SecondaryHeading = styled.h2`
 	font-size: 3.5rem;
-	color: ${({ theme }) => theme.textColor};
-	margin-bottom: 2rem;
 	text-align: center;
+	${fw};
+	${mb};
 `;
-Title.displayName = 'Title';
+SecondaryHeading.displayName = 'SecondaryHeading';
+
+const TertiaryHeading = styled.h3`
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	${fw};
+`;
+TertiaryHeading.displayName = 'TertiaryHeading';
+
+const QuaternaryHeading = styled.h4`
+	font-size: 2rem;
+`;
+QuaternaryHeading.displayName = 'QuaternaryHeading';
+
+export { PrimaryHeading, SecondaryHeading, TertiaryHeading, QuaternaryHeading };
