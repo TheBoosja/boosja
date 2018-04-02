@@ -9,7 +9,7 @@ const Layout = styled.div`
 const Home = () => {
 	return (
 		<Layout>
-			<Heading>Boosja</Heading>
+			<Heading>Boosja's Movies & TV</Heading>
 			<Anchor to="/search">To the Search</Anchor>
 		</Layout>
 	);
