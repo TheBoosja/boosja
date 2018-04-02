@@ -27,11 +27,11 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
       "children": <Field
         autoFocus={true}
-        component="input"
+        component={[Function]}
         name="query"
         placeholder="Search"
 />,
@@ -44,7 +44,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "autoFocus": true,
-        "component": "input",
+        "component": [Function],
         "name": "query",
         "placeholder": "Search",
       },
@@ -52,17 +52,17 @@ ShallowWrapper {
       "rendered": null,
       "type": [Function],
     },
-    "type": [Function],
+    "type": "form",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
         "children": <Field
           autoFocus={true}
-          component="input"
+          component={[Function]}
           name="query"
           placeholder="Search"
 />,
@@ -75,7 +75,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "autoFocus": true,
-          "component": "input",
+          "component": [Function],
           "name": "query",
           "placeholder": "Search",
         },
@@ -83,7 +83,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      "type": [Function],
+      "type": "form",
     },
   ],
   Symbol(enzyme.__options__): Object {
