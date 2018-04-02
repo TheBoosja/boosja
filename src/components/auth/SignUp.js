@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import { registerUser, authError } from 'actions/auth';
-import { Form, Error, Button, Title } from 'components/styled';
+import { Form, Error, Button, SecondaryHeading } from 'components/styled';
 import renderField from './renderField';
 
 export class SignUp extends Component {
@@ -30,7 +30,7 @@ export class SignUp extends Component {
 
 		return (
 			<Form onSubmit={handleSubmit(this.onFormSubmit)}>
-				<Title>Register a new account</Title>
+				<SecondaryHeading>Register a new account</SecondaryHeading>
 				<Field label="Email" name="email" type="email" autoFocus component={renderField} />
 				<Field label="Password" name="password" type="password" component={renderField} />
 				<Field

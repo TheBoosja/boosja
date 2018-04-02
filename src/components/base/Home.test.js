@@ -9,8 +9,8 @@ describe('Home', () => {
 		expect(home).toMatchSnapshot();
 	});
 
-	it('contains a Heading component', () => {
-		expect(home.find('Heading').exists()).toBe(true);
+	it('contains a PrimaryHeading component', () => {
+		expect(home.find('PrimaryHeading').exists()).toBe(true);
 	});
 
 	it('contains a link to the Search page', () => {

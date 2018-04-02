@@ -18,9 +18,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Heading>
-          Boosja
-</Heading>,
+        <PrimaryHeading>
+          Boosja's Movies & TV
+</PrimaryHeading>,
         <Anchor
           to="/search"
 >
@@ -35,10 +35,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Boosja",
+          "children": "Boosja's Movies & TV",
         },
         "ref": null,
-        "rendered": "Boosja",
+        "rendered": "Boosja's Movies & TV",
         "type": [Function],
       },
       Object {
@@ -63,9 +63,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Heading>
-            Boosja
-</Heading>,
+          <PrimaryHeading>
+            Boosja's Movies & TV
+</PrimaryHeading>,
           <Anchor
             to="/search"
 >
@@ -80,10 +80,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Boosja",
+            "children": "Boosja's Movies & TV",
           },
           "ref": null,
-          "rendered": "Boosja",
+          "rendered": "Boosja's Movies & TV",
           "type": [Function],
         },
         Object {

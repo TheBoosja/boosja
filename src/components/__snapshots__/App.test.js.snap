@@ -26,6 +26,7 @@ ShallowWrapper {
       "theme": Object {
         "bgDark": "#202223",
         "bgLight": "#393e41",
+        "detailColor": "#757776",
         "primaryColor": "#064789",
         "primaryColorLight": "#0084d1",
         "textColor": "#c4ccd1",
@@ -95,6 +96,7 @@ ShallowWrapper {
         "theme": Object {
           "bgDark": "#202223",
           "bgLight": "#393e41",
+          "detailColor": "#757776",
           "primaryColor": "#064789",
           "primaryColorLight": "#0084d1",
           "textColor": "#c4ccd1",

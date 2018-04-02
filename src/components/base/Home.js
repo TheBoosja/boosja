@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading, Anchor } from 'components/styled';
+import { PrimaryHeading, Anchor } from 'components/styled';
 
 const Layout = styled.div`
 	padding: 2rem 5rem;
@@ -9,7 +9,7 @@ const Layout = styled.div`
 const Home = () => {
 	return (
 		<Layout>
-			<Heading>Boosja's Movies & TV</Heading>
+			<PrimaryHeading>Boosja's Movies & TV</PrimaryHeading>
 			<Anchor to="/search">To the Search</Anchor>
 		</Layout>
 	);

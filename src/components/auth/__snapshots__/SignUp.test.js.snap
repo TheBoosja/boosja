@@ -22,9 +22,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Title>
+        <SecondaryHeading>
           Register a new account
-</Title>,
+</SecondaryHeading>,
         <Field
           autoFocus={true}
           component={[Function]}
@@ -132,9 +132,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Title>
+          <SecondaryHeading>
             Register a new account
-</Title>,
+</SecondaryHeading>,
           <Field
             autoFocus={true}
             component={[Function]}
